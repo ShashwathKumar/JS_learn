@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <p id="array"></p>
+    
+    <script>
+        var phonebookEntry = {};
+
+        console.log('in array function');
+
+        phonebookEntry.name = 'Oxnard Montalvo';
+        phonebookEntry.number = '(555) 555-5555';
+        phonebookEntry.phone = function() {
+        document.getElementById("array").innerHTML('Calling ' + this.name + ' at ' + this.number + '...');
+        };
+
+        phonebookEntry.phone();
+    </script>
+</body>
+
+</html>
